@@ -1,3 +1,7 @@
+import Box from './Box.jsx';
+import Display from './Display.jsx';
+import Digit from './Digit.jsx';
+import Button from './Button.jsx';
 
 const App = () => {
 
@@ -7,7 +11,17 @@ const App = () => {
 
   return (
     <>
-      <h1>Hello React!</h1>
+      <Box>
+        <Display>
+          <Digit />
+        </Display>
+        <Box>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </Box>
+      </Box>
     </>
   );
 }
