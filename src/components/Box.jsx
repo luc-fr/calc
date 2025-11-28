@@ -1,13 +1,16 @@
 
-const Box = ({ children }) => {
+const Box = ({ children, display, colums, gap, padding }) => {
 
   const style = `
-
+    ${display}
+    ${colums}
+    ${gap}
+    ${padding}
   `;
 
   return (
     <>
-      <div>{children}</div>
+      <div className={style}>{children}</div>
     </>
   );
 }
